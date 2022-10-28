@@ -1,0 +1,59 @@
+.kiskep img, .nagykep img{
+    width: 100%;
+}
+
+header, main, footer, nav, article, section, div{
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+
+
+
+.kiskep{
+    padding: 0 4px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+}
+
+nav>ul{
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+nav>ul>li>a{
+    text-decoration: none;
+}
+
+nav>ul>li{
+    list-style: none;
+}
+
+li{
+    /* display: inline-block; */
+}
+
+.kep img{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .kiskep{
+        grid-template-columns: repeat(2,1fr);
+    }
+    }
+    @media screen and (max-width: 400px){
+    .kiskep{
+        grid-template-columns: 1fr;
+    }
+    nav{
+        grid-template-columns: 1fr;
+    }
+        .kep{
+        max-width: 100%;
+        }
+    }
